@@ -1,0 +1,24 @@
+body {
+  background-color: #e9e7e7;
+  margin: 16px;
+}
+h1 {
+  margin-left: 36px;
+}
+h2 {
+  color: #1460aa;
+  margin-left: 36px;
+}
+h3 {
+  margin-left: 36px;
+}
+img {
+  padding: 16px;
+  margin: 16px;
+}
+nav a {
+  margin-right: 16px;
+}
+nav {
+  margin: 16px;
+}
