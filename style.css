@@ -1,21 +1,20 @@
 body {
   background-color: #e9e7e7;
-  margin: 16px;
+  margin: 16px auto;
+  width: 90vw;
+  text-align: center;
 }
 h1 {
-  margin-left: 36px;
+  color: rgb(54, 48, 48);
 }
 h2 {
   color: #4f8dcc;
-  margin-left: 36px;
 }
 h3 {
-  margin-left: 36px;
   color: #194e9e;
 }
 img {
-  padding: 16px;
-  margin: 16px;
+  margin: 8px auto;
 }
 nav a {
   margin-right: 16px;
@@ -23,4 +22,10 @@ nav a {
 }
 nav {
   margin: 16px;
+}
+footer {
+  margin-top: 64px;
+}
+p {
+  margin-bottom: 16px;
 }
