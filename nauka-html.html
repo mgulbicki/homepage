@@ -7,34 +7,34 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-      <header>
-          <nav>
-              <a href="/index.html">Strona główna</a>
-              <a href="/nauka-html.html">Nauka HTML</a>
-              <a href="/nauka-css.html">Nauka CSS</a>
-          </nav>
+    <header class="header">
+      <nav class="header__navigation">
+          <a class="header__navigation-link" href="/index.html">Strona główna</a>
+          <a class="header__navigation-link" href="/nauka-html.html">Nauka HTML</a>
+          <a class="header__navigation-link" href="/nauka-css.html">Nauka CSS</a>
+      </nav>
+    </header>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__header-heading">Nauka HTML-a</h1>
       </header>
-    <main>
-      <header>
-        <h1>Nauka HTML-a</h1>
-      </header>
 
-      <section>
-        <img src="/images/html.jpg" alt="symbol html">
+      <section class="main__section">
+        <img class="main__section-image" src="/images/html.jpg" alt="symbol html">
 
-        <h2>Moje ulubione tagi</h2>
+        <h2 class="main__section-heading">Moje ulubione tagi</h2>
 
-        <article>
-            <h3>H1</h3>
-            <p>To jest mój ulubiony nagłówek</p>
+        <article class="main__article">
+            <h3 class="main__article-heading">H1</h3>
+            <p class="main__article-paragraph">To jest mój ulubiony nagłówek</p>
         </article>
       </section>
 
-      <section>
-        <article>
-          <h3>Jak stworzyć prawidłowego HTML-a?</h3>
+      <section class="main__section">
+        <article class="main__article">
+          <h3 class="main__article-heading">Jak stworzyć prawidłowego HTML-a?</h3>
 
-          <p>
+          <p class="main__article-paragraph">
             Tworzenie zgodnego ze standardami HTML-a to sztuka, którą do
             perfekcji opanowało niewielu. Jeśli chcesz stać się częścią tej
             grupy, musisz wykazać się otwartą głową i dysponować dużą ilością
@@ -44,7 +44,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         Strona domowa Marka Gulbickiego, wszystkie treści są zapisem udziału w
         szkoleniu WTF: Co ten frontend?
     </footer>
