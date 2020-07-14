@@ -4,64 +4,116 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strona domowa</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
   </head>
   <body>
     <header class="header">
-      <nav class="header__navigation">
-          <a class="header__navigation-link" href="/index.html">Strona główna</a>
-          <a class="header__navigation-link" href="/nauka-html.html">Nauka HTML</a>
-          <a class="header__navigation-link" href="/nauka-css.html">Nauka CSS</a>
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+        🍔
+      </button>
+      <nav class="navigation navigation--js">
+        <a
+          class="navigation__link navigation__link--homepage"
+          href="/index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="/nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="/nauka-css.html">Nauka CSS</a>
       </nav>
     </header>
     <main class="main">
-      <header class="main__header">
-        <h1 class="main__header-heading">Marek Gulbicki – Strona domowa</h1>
+      <header class="main__header" id="top">
+        <h1 class="main__heading main__heading--js">
+          Marek Gulbicki – Strona domowa
+        </h1>
+        <button class="action--js">Zmień nagłówek</button>
       </header>
 
-      <section class="main__section">
-        <img class="main_section-image" src="/images/marek.jpg" alt="uśmiechnięty Marek">
+      <aside class="about">
+        <h2 class="about__heading">Kim jestem?</h2>
+        <p class="test">no wlaśnie, <span class="test__special">kim?</span></p>
 
-        <h2 class="main__section-heading">Kim jestem?</h2>
+        <img
+          class="about__picture"
+          src="/images/marek.jpg"
+          alt="uśmiechnięty Marek"
+        />
 
-        <p class="main__section-paragraph">Hej! Jestem na początku drogi do kariery front end developerskiej. Postanowiłem zgłębić tajniki tej sztuki.
+        <p class="about__description">
+          Hej! Jestem na początku drogi do kariery front end developerskiej.
+          Postanowiłem zgłębić tajniki tej sztuki.
         </p>
 
-        <p class="main_section-paragraph">
-          W tym celu zapisałem się na szkolenie WTF: Co ten frontend? prowadzone
-          przez Maćka Korsana. Ta strona będzie zawierała notatki z tego właśnie
-          szkolenia.
+        <p class="about__description">
+          W tym celu zapisałem się na szkolenie
+          <a href="https://www.cotenfrontend.pl" class="about__link"
+            >WTF: Co ten frontend?</a
+          >
+          prowadzone przez Maćka Korsana. Ta strona będzie zawierała notatki z
+          tego właśnie szkolenia.
         </p>
-      </section>
+      </aside>
 
-      <section class="main__section">
-        <h2 class="main__section-heading">Notatki z WTF: Co ten frontend?</h2>
-        <article class="main__article">
-          <h3 class="main__article-heading">Jak stworzyć prawidłowego HTML-a?</h3>
+      <section class="notes" id="notatki">
+        <h2 class="notes__heading">Notatki z WTF: Co ten frontend?</h2>
+        <div class="grid">
+          <article class="week-summary">
+            <h3 class="week-summary__title">Odrabianie pracy domowej</h3>
+            <p class="week-summary__description">Poszło mi całkiem spoko :)</p>
+            <p
+              class="week-summary__description week-summary__description--js"
+            ></p>
+          </article>
 
-          <p class="main__article-paragraph">
-            Tworzenie zgodnego ze standardami HTML-a to sztuka, którą do
-            perfekcji opanowało niewielu. Jeśli chcesz stać się częścią tej
-            grupy, musisz wykazać się otwartą głową i dysponować dużą ilością
-            wolnego czasu…
-          </p>
-        </article>
+          <article class="week-summary week-summary--special">
+            <h3 class="week-summary__title">
+              Jak stworzyć prawidłowego HTML-a?
+            </h3>
 
-        <article class="main__article">
-          <h3 class="main__article-heading">Jak stylować HTML-a?</h3>
+            <p class="week-summary__description">
+              Tworzenie zgodnego ze standardami HTML-a to sztuka, którą do
+              perfekcji opanowało niewielu. Jeśli chcesz stać się częścią tej
+              grupy, musisz wykazać się otwartą głową i dysponować dużą ilością
+              wolnego czasu…
+            </p>
 
-          <p class="main__article-paragraph">
-            Aby zmienić wygląd podstawowych elementów HTML-a należy do niego
-            dołączyć plik z rozszerzeniem .css, za pomocą którego można zmieniać
-            wygląd strony.
-          </p>
-        </article>
+            <section>
+              <h4>Lista fajnych znaczników</h4>
+              <ul class="list">
+                <li class="list__item">UL</li>
+                <li class="list__item">OL</li>
+                <li class="list__item">SECTION</li>
+              </ul>
+            </section>
+
+            <section>
+              <h4>Kroki do zrobienia dobrego HTML-a</h4>
+              <ol>
+                <li>Przeanalizuj treść</li>
+                <li>Podziel ją na sekcje</li>
+                <li>Utwórz pierwszą wersję kodu</li>
+              </ol>
+            </section>
+          </article>
+
+          <article class="week-summary">
+            <h3 class="week-summary__title">Jak stylować HTML-a?</h3>
+
+            <p class="week-summary__description">
+              Aby zmienić wygląd podstawowych elementów HTML-a należy do niego
+              dołączyć plik z rozszerzeniem .css, za pomocą którego można
+              zmieniać wygląd strony.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       Strona domowa Marka Gulbickiego, wszystkie treści są zapisem udziału w
-      szkoleniu WTF: Co ten frontend?
+      szkoleniu WTF: Co ten frontend.
+      <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
     <script src="/main.js"></script>
   </body>

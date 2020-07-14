@@ -4,14 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nauka HTML</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header class="header">
-      <nav class="header__navigation">
-          <a class="header__navigation-link" href="/index.html">Strona główna</a>
-          <a class="header__navigation-link" href="/nauka-html.html">Nauka HTML</a>
-          <a class="header__navigation-link" href="/nauka-css.html">Nauka CSS</a>
+      <nav class="navigation">
+        <a
+          class="navigation__link navigation__link--homepage"
+          href="/index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="/nauka-html.html">Nauka HTML</a>
+        <a class="navigation__link" href="/nauka-css.html">Nauka CSS</a>
       </nav>
     </header>
     <main class="main">
@@ -20,19 +25,25 @@
       </header>
 
       <section class="main__section">
-        <img class="main__section-image" src="/images/html.jpg" alt="symbol html">
+        <img
+          class="main__section-image"
+          src="/images/html.jpg"
+          alt="symbol html"
+        />
 
         <h2 class="main__section-heading">Moje ulubione tagi</h2>
 
         <article class="main__article">
-            <h3 class="main__article-heading">H1</h3>
-            <p class="main__article-paragraph">To jest mój ulubiony nagłówek</p>
+          <h3 class="main__article-heading">H1</h3>
+          <p class="main__article-paragraph">To jest mój ulubiony nagłówek</p>
         </article>
       </section>
 
       <section class="main__section">
         <article class="main__article">
-          <h3 class="main__article-heading">Jak stworzyć prawidłowego HTML-a?</h3>
+          <h3 class="main__article-heading">
+            Jak stworzyć prawidłowego HTML-a?
+          </h3>
 
           <p class="main__article-paragraph">
             Tworzenie zgodnego ze standardami HTML-a to sztuka, którą do
@@ -45,10 +56,10 @@
     </main>
 
     <footer class="footer">
-        Strona domowa Marka Gulbickiego, wszystkie treści są zapisem udziału w
-        szkoleniu WTF: Co ten frontend?
+      Strona domowa Marka Gulbickiego, wszystkie treści są zapisem udziału w
+      szkoleniu WTF: Co ten frontend?
     </footer>
-      
+
     <script src="/main.js"></script>
   </body>
 </html>
