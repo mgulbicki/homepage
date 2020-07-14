@@ -6,7 +6,7 @@ Moja strona domowa
 
 Strona zrobiona jest w ramach kursu Maćka Korsana [WTF: Co ten frontend](https://cotenfrontend.pl).
 
-![logo WTF](https://edu.devstyle.pl/wp-content/uploads/2019/03/wtf-wpidea.png)
+![logo WTF](./gh/cover.png)
 
 ## Co zawiera?
 
